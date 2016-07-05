@@ -32,13 +32,14 @@ class ViewController: UIViewController {
         theImage.addGestureRecognizer(swipeGestLeft)
         
         //ROTATION
-        let rotateGest = UISwipeGestureRecognizer(target: self, action: "rotateGesture:")
+        let rotateGest = UIRotationGestureRecognizer(target: self, action: "rotateGesture:")
         theImage.addGestureRecognizer(rotateGest)
         
-        
-        
-        
-        
+        //LONG PRESS
+        let longPressGes = UILongPressGestureRecognizer(target: self, action: "longPressGesture:")
+        longPressGes.minimumPressDuration = 2.0
+        theImage.addGestureRecognizer(longPressGes)
+        theImage.image = UIImage(named: "sun_tzu_general.jpg")
         
         
     }
@@ -48,6 +49,26 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    
+    
+    @IBAction func rotateGesture(sender: UIRotationGestureRecognizer) {
+        
+    }
+    
+    @IBAction func respondToSwipeGest(send: UIGestureRecognizer) {
+        
+    }
+    
+    @IBAction func longPressGesture(gestRec: UIGestureRecognizer) {
+        
+    }
+    
+    func changeTheImage() {
+        if (theImage.image == UIImage(named: "sun_tzu_general.jpg")) {
+            theImage.image = UIImage(named: "clausewitz.jpg")
+        } else {
+            theImage.image = UIImage(named: "sun_tzu_general.jpg")
+        }
+    }
 }
 
