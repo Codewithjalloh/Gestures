@@ -12,6 +12,8 @@
 		58D947771D2C7AC1005EF45A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D947751D2C7AC1005EF45A /* Main.storyboard */; };
 		58D947791D2C7AC1005EF45A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58D947781D2C7AC1005EF45A /* Assets.xcassets */; };
 		58D9477C1D2C7AC1005EF45A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D9477A1D2C7AC1005EF45A /* LaunchScreen.storyboard */; };
+		58D947841D2C7B42005EF45A /* sun_tzu_general.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 58D947831D2C7B42005EF45A /* sun_tzu_general.jpg */; };
+		58D947861D2C7B51005EF45A /* clausewitz.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 58D947851D2C7B51005EF45A /* clausewitz.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		58D947781D2C7AC1005EF45A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58D9477B1D2C7AC1005EF45A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58D9477D1D2C7AC1005EF45A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58D947831D2C7B42005EF45A /* sun_tzu_general.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sun_tzu_general.jpg; sourceTree = "<group>"; };
+		58D947851D2C7B51005EF45A /* clausewitz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = clausewitz.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		58D947701D2C7AC1005EF45A /* Gestures */ = {
 			isa = PBXGroup;
 			children = (
+				58D947851D2C7B51005EF45A /* clausewitz.jpg */,
+				58D947831D2C7B42005EF45A /* sun_tzu_general.jpg */,
 				58D947711D2C7AC1005EF45A /* AppDelegate.swift */,
 				58D947731D2C7AC1005EF45A /* ViewController.swift */,
 				58D947751D2C7AC1005EF45A /* Main.storyboard */,
@@ -125,6 +131,8 @@
 				58D9477C1D2C7AC1005EF45A /* LaunchScreen.storyboard in Resources */,
 				58D947791D2C7AC1005EF45A /* Assets.xcassets in Resources */,
 				58D947771D2C7AC1005EF45A /* Main.storyboard in Resources */,
+				58D947861D2C7B51005EF45A /* clausewitz.jpg in Resources */,
+				58D947841D2C7B42005EF45A /* sun_tzu_general.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
