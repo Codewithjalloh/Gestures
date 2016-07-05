@@ -52,6 +52,12 @@ class ViewController: UIViewController {
     
     
     @IBAction func rotateGesture(sender: UIRotationGestureRecognizer) {
+        let rotation:CGFloat = sender.rotation
+        let transform:CGAffineTransform = CGAffineTransformMakeRotation(rotation + netRotation)
+        sender.view?.transform = transform
+        if (sender.state == UIGestureRecognizerState.Ended) {
+            netRotation += rotation
+        }
         
     }
     
