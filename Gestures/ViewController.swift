@@ -62,10 +62,39 @@ class ViewController: UIViewController {
     }
     
     @IBAction func respondToSwipeGest(send: UIGestureRecognizer) {
+        if let swipeGest = send as? UISwipeGestureRecognizer {
+            switch swipeGest.direction {
+            case UISwipeGestureRecognizerDirection.Right:
+                changeTheImage()
+                print("swipe right")
+            
+            case UISwipeGestureRecognizerDirection.Left:
+                changeTheImage()
+                print("swipe left")
+            
+            case UISwipeGestureRecognizerDirection.Down:
+                changeTheImage()
+                print("swipe down")
+            
+            case UISwipeGestureRecognizerDirection.Up:
+                changeTheImage()
+                print("swipe up")
+        
+            default:
+                break
+            }
+        }
         
     }
     
     @IBAction func longPressGesture(gestRec: UIGestureRecognizer) {
+        if (gestRec.state == .Began) {
+            let alertController = UIAlertController(title: "Alert", message: "Long Press gesture", preferredStyle: .Alert)
+            let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in }
+            alertController.addAction(OKAction)
+            self.presentViewController(alertController, animated: true, completion: nil)
+            
+        }
         
     }
     
